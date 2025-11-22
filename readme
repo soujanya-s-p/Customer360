@@ -1,0 +1,55 @@
+Project Name:
+
+Enterprise Customer 360° Data Platform
+
+Description:
+
+Built a Customer 360° platform that integrates multiple datasets — transactions, web logs, support tickets — into a single source of truth for comprehensive customer insights. Developed ETL pipelines, feature engineering, and an interactive Streamlit dashboard to visualize key metrics and churn probability.
+
+Key Features & Highlights:
+
+ETL Pipeline: Bronze (raw) → Silver (cleaned) → Gold (master) layers for reproducible workflows.
+
+Data Cleaning & Preprocessing: Handled missing values, duplicates, and format standardization.
+
+Feature Engineering: Calculated RFM (Recency, Frequency, Monetary), CLV, and churn probability.
+
+Machine Learning: Trained RandomForestClassifier for churn prediction; model dynamically generated from scripts.
+
+Interactive Dashboard: Streamlit + Plotly charts for:
+
+Top 10 At-Risk & VIP customers
+
+Transactions distribution
+
+Customer engagement & campaign performance
+
+Churn probability and segment visualization
+
+Business Insights: Enabled actionable insights for marketing, finance, and operations teams.
+
+Skills Demonstrated:
+
+Python, Pandas, Scikit-learn, Streamlit, Plotly, ETL pipelines, data preprocessing, feature engineering, machine learning, dashboarding, business analytics.
+
+How to Run:
+
+Generate fake data:
+
+python etl/generate_fake_data.py
+
+
+Clean & transform data:
+
+python etl/create_silver.py
+python etl/create_gold.py
+
+
+Train churn model:
+
+python etl/train_model.py
+
+
+Launch interactive dashboard:
+
+streamlit run app.py
