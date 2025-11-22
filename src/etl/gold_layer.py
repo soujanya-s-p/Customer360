@@ -33,4 +33,4 @@ support.to_csv("data/gold/fact_support_tickets.csv", index=False)
 # FACT MARKETING EVENTS
 marketing.to_csv("data/gold/fact_marketing.csv", index=False)
 
-print("Gold layer created successfully ✔️")
+print("Gold layer created successfully ")
