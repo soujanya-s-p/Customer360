@@ -27,53 +27,29 @@ This project demonstrates **real-world data engineering, business analytics, and
   - Churn probability and segmentation
 - **Business Insights:** Enables marketing, finance, and operations teams to make data-driven decisions.
 
----
-
-## 🔹 Project Structure
-
-Customer360/
-│
-├── app.py # Streamlit dashboard
-├── etl/ # ETL scripts & model training
-│ ├── generate_fake_data.py
-│ ├── create_silver.py
-│ ├── create_gold.py
-│ └── train_model.py
-├── data/
-│ ├── bronze/ # Raw data placeholders
-│ ├── silver/ # Cleaned data placeholders
-│ └── gold/ # Master data placeholders
-├── model/ # Trained model (.pkl, ignored in GitHub)
-├── requirements.txt
-├── README.md
-└── .gitignore
-
-yaml
-Copy code
-
----
 
 ## 🔹 How to Run
 
 1. **Generate fake data**
-```bash
+```
 python etl/generate_fake_data.py
-Clean & transform data
+```
+2 Clean & transform data
 
-bash
-Copy code
+```
 python etl/create_silver.py
 python etl/create_gold.py
-Train churn prediction model
+```
+3 Train churn prediction model
 
-bash
-Copy code
+```
 python etl/train_model.py
-Launch interactive dashboard
+```
+4 Launch interactive dashboard
 
-bash
-Copy code
+```
 streamlit run app.py
+```
 🔹 Screenshots / Demo
 ## 🔹 Screenshots / Dashboard Demo
 
@@ -86,10 +62,6 @@ streamlit run app.py
 ### 3️⃣ Customer Segments Distribution
 <img src="images/customer.png" alt="Customer Segments Distribution" width="700">
 
-
-Interactive Customer 360° Dashboard showing KPIs, churn prediction, and customer segmentation.
-
-💡 Tip: Replace with a GIF to show interactive hover effects, filters, and charts.
 
 🔹 Key Metrics Displayed in Dashboard
 Metric	Description
@@ -119,16 +91,5 @@ Business Analytics – Customer segmentation, campaign engagement, actionable KP
 🔹 License
 This project is open-source and free to use for portfolio/demo purposes.
 
-🔹 Optional Enhancements
-Add Plotly hover info and colored bars for better interaction
-
-Include customer segments distribution pie chart
-
-Add churn probability slider for dynamic filtering
-
-Showcase top 10 VIP vs top 10 At-Risk customers in separate tables
-
-yaml
-Copy code
 
 ---
