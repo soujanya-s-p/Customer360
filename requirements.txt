@@ -1,0 +1,8 @@
+pandas
+numpy
+faker
+fuzzywuzzy[speedup]
+scikit-learn
+streamlit
+joblib
+matplotlib

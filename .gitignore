@@ -1,0 +1,10 @@
+# Ignore all data files
+data/*
+!.gitkeep
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
