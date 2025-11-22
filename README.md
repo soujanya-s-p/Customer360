@@ -27,6 +27,27 @@ This project demonstrates **real-world data engineering, business analytics, and
   - Churn probability and segmentation
 - **Business Insights:** Enables marketing, finance, and operations teams to make data-driven decisions.
 
+## Project structure
+```
+Customer360/
+├── app.py                     # Streamlit dashboard
+├── etl/                       # ETL scripts
+│   ├── generate_fake_data.py
+│   ├── create_silver.py
+│   ├── create_gold.py
+│   └── train_model.py
+├── data/
+│   ├── bronze/                 # Raw data placeholders (do NOT commit sensitive CSVs)
+│   ├── silver/                 # Cleaned data placeholders
+│   └── gold/                   # Master data placeholder CSV
+├── src/
+│   ├── models/
+│   │   └── churn_model.pkl     # optional, ignored in GitHub
+├── images/                     # Screenshots/GIFs for README
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
 
 ## 🔹 How to Run
 
@@ -63,33 +84,31 @@ streamlit run app.py
 <img src="images/customer.png" alt="Customer Segments Distribution" width="700">
 
 
-🔹 Key Metrics Displayed in Dashboard
-Metric	Description
-Total Customers	Total number of unique customers
-Avg Monetary Value	Average total money spent per customer
-Avg Transaction Amount	Average purchase value
-Avg Sessions per Customer	Average number of site/app sessions
-Top 10 At-Risk Customers	Customers most likely to churn
-Top 10 VIP Customers	High-value loyal customers
-Customer Engagement	Total tickets, sessions, unique pages visited
-Campaign Engagement	Emails opened, links clicked, campaigns received
-Churn Probability	Predicted likelihood of churn per customer
+## 🔹 Key Metrics Displayed in Dashboard
 
-🔹 Skills Demonstrated
-Python & Pandas – ETL, data cleaning, transformations
+| Metric                     | Description                                         |
+|----------------------------|-----------------------------------------------------|
+| Total Customers            | Total number of unique customers                   |
+| Avg Monetary Value         | Average total money spent per customer             |
+| Avg Transaction Amount     | Average purchase value                              |
+| Avg Sessions per Customer  | Average number of site/app sessions               |
+| Top 10 At-Risk Customers   | Customers most likely to churn                     |
+| Top 10 VIP Customers       | High-value loyal customers                         |
+| Customer Engagement        | Total tickets, sessions, unique pages visited     |
+| Campaign Engagement        | Emails opened, links clicked, campaigns received  |
+| Churn Probability          | Predicted likelihood of churn per customer        |
 
-Data Warehousing – Bronze/Silver/Gold layers
+## 🔹 Skills Demonstrated
 
-Feature Engineering – RFM scores, CLV, churn probability
+- **Python & Pandas** – ETL, data cleaning, transformations  
+- **Data Warehousing** – Bronze/Silver/Gold layers  
+- **Feature Engineering** – RFM scores, CLV, churn probability  
+- **Machine Learning** – RandomForestClassifier for churn prediction  
+- **Dashboarding** – Streamlit + Plotly interactive visualizations  
+- **Business Analytics** – Customer segmentation, campaign engagement, actionable KPIs  
 
-Machine Learning – RandomForestClassifier for churn prediction
+## 🔹 License
 
-Dashboarding – Streamlit + Plotly interactive visualizations
-
-Business Analytics – Customer segmentation, campaign engagement, actionable KPIs
-
-🔹 License
-This project is open-source and free to use for portfolio/demo purposes.
-
+This project is **open-source** and free to use for portfolio/demo purposes.
 
 ---
